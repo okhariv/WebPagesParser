@@ -1,0 +1,43 @@
+﻿<Window x:Class="WebPagesParser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebPagesParser"
+        mc:Ignorable="d"
+        Title="Web Pages Parser" Height="500" Width="700"
+        ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="576,12,0,0" VerticalAlignment="Top" Width="75" Click="Start_Click"/>
+        <Button x:Name="Stop" Content="Stop" HorizontalAlignment="Left" Margin="576,47,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.474,-0.263" Click="Stop_Click"/>
+        <Label x:Name="WordToFind" Content="Enter text:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="30                " Width="130"/>
+        <TextBox x:Name="WordToFindValue" HorizontalAlignment="Left" Height="30" Margin="130,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410"/>
+        <TextBox x:Name="MaxPagesCountValue" HorizontalAlignment="Left" Height="30" Margin="353,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="MaxPagesCount" Content="Max web pages count:" HorizontalAlignment="Left" Margin="207,85,0,0" VerticalAlignment="Top" Height="30                " Width="130"/>
+        <Label x:Name="MaxThreadsCount" Content="Max threads count:" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Height="30                " Width="130"/>
+        <TextBox x:Name="MaxThreadsCountValue" HorizontalAlignment="Left" Height="30" Margin="130,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="StartLink" Content="Enter start link:" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Height="30                " Width="130"/>
+        <TextBox x:Name="StartLinkValue" HorizontalAlignment="Left" Height="30" Margin="130,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410"/>
+        <DataGrid x:Name="ProcessedPages" AutoGenerateColumns="False" ItemsSource="{Binding ProcessedPages}" Margin="0,140,0,0" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="3*" Header="Links" Binding="{Binding Link}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextWrapping" Value="Wrap" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Width="2*" Header="Status" Binding="{Binding Status}" />
+                <DataGridTextColumn Width="3*" Header="Message" Binding="{Binding ExceptionMessage}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextWrapping" Value="Wrap" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPagesParser", "WebPagesParser\WebPagesParser.csproj", "{3B412ADA-1154-46E5-BEC5-F2833AE62C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite", "WebSite\WebSite.csproj", "{3AA2E06D-05CA-4F20-8948-9C047A4D5481}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B412ADA-1154-46E5-BEC5-F2833AE62C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B412ADA-1154-46E5-BEC5-F2833AE62C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B412ADA-1154-46E5-BEC5-F2833AE62C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B412ADA-1154-46E5-BEC5-F2833AE62C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA2E06D-05CA-4F20-8948-9C047A4D5481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA2E06D-05CA-4F20-8948-9C047A4D5481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA2E06D-05CA-4F20-8948-9C047A4D5481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA2E06D-05CA-4F20-8948-9C047A4D5481}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
